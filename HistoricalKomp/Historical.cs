@@ -8,5 +8,6 @@ namespace HistoricalKomp
 {
     public class Historical
     {
+
     }
 }
