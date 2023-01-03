@@ -10,7 +10,6 @@ namespace HistoricalKomp
     public class ConnectionParams : IDisposable
     {
         private static IDbConnection instance = null;
-
         public static readonly string DATA_SOURCE = "//localhost:1521/xe";
         public static readonly string USER_ID = "tatj";
         public static readonly string PASSWORD = "ftn";
