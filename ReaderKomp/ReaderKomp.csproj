@@ -44,5 +44,11 @@
     <Compile Include="Reader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HistoricalKomp\HistoricalKomp.csproj">
+      <Project>{919a47ce-02e4-41d8-9134-93648ad4936e}</Project>
+      <Name>HistoricalKomp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -44,5 +44,11 @@
     <Compile Include="Writer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DumpingBufferKomp\DumpingBufferKomp.csproj">
+      <Project>{a877a219-0287-42ed-9163-e2f26a58a2ed}</Project>
+      <Name>DumpingBufferKomp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

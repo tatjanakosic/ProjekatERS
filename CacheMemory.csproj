@@ -44,5 +44,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ReaderKomp\ReaderKomp.csproj">
+      <Project>{fb23b876-76e6-4d3b-8493-4adaa3c5b7dc}</Project>
+      <Name>ReaderKomp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Writer\WriterKomp.csproj">
+      <Project>{330c882a-26ba-423f-90bb-80d4b492b260}</Project>
+      <Name>WriterKomp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

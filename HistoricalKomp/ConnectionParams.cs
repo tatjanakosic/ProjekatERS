@@ -17,20 +17,27 @@ namespace HistoricalKomp
 
         public static IDbConnection GetConnection()
         {
-            OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder();
-            ocsb.UserID = USER_ID;
-            ocsb.DataSource = DATA_SOURCE;
-            ocsb.Password = PASSWORD;
+            if (instance == null || instance.State == System.Data.ConnectionState.Closed)
+            {
 
-            instance = new OracleConnection(ocsb.ConnectionString);
+                OracleConnectionStringBuilder ocsb = new OracleConnectionStringBuilder();
+                ocsb.UserID = USER_ID;
+                ocsb.Password = PASSWORD;
+                ocsb.DataSource = DATA_SOURCE;
 
+                instance = new OracleConnection(ocsb.ConnectionString);
+
+            }
             return instance;
-
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            if (instance != null)
+            {
+                instance.Close();
+                instance.Dispose();
+            }
         }
     }
 }
