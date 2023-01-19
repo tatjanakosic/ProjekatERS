@@ -49,23 +49,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DumpingBufferProject\DumpingBufferProject.csproj">
-      <Project>{B59BA516-DF08-4AD0-AB1B-29045A575D26}</Project>
-      <Name>DumpingBufferProject</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HistoricalProject\HistoricalProject.csproj">
-      <Project>{D5D56E2B-928B-4955-AD09-8E3A8323A474}</Project>
-      <Name>HistoricalProject</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ReaderProject\ReaderProject.csproj">
-      <Project>{E56570A8-79C2-43CB-AC63-40C45D82F401}</Project>
-      <Name>ReaderProject</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WriterProject\WriterProject.csproj">
-      <Project>{928E35CF-BDCC-4823-BDC4-C5816220F1DA}</Project>
-      <Name>WriterProject</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
